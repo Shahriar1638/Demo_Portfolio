@@ -7,11 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/homePageStle.css">
     <script src="https://kit.fontawesome.com/26f075e1f1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .about-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-me {
+            text-align: center;
+            font-size: 48px;
+            color: #FFD43B;
+            font-weight: bold;
+            padding-bottom: -100px;
+            text-transform: uppercase;
+        }
+
+        .about-content {
+            height: 500px;
+            width: 100%;
+            background-image: url('./Icons/banner2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
 </head>
 <body class="light-theme">
     <header class="Navbar-container">
         <div>
-            <h1> <span class="Navbar-text">Hello</span> Welcome to My Portfolio</h1>
+            <h1> <span class="Navbar-text" style="color: #FFD43B;">Hello, </span> Welcome to My Portfolio</h1>
         </div>
         <div>
             <button id="theme-toggle" title="ThemeButton">
@@ -21,14 +53,57 @@
     </header>
 
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is some content about me. It should change color with the theme.</p>
+        <section class="hero-section">
+            <div style="background-image: url('./Icons/banner1.png');">
+                <h1 class="heroSectionText">Hello, I'm <br> <span style="font-size: 60px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">MD Shahriar Hossain</span></h1>
+            </div>
         </section>
 
+        <section class="about-section" style="height: 600px; width: 100%;">
+            <h2 class="about-me">About me</h2>
+            <div class="about-content">
+                <p>I'm an undergrade bechalor student and beginner level web application developer. I enjoy coding and working on challenging projects that push my limits. My skills include web development, artificial intelligence, machine learning and database management. I'm always eager to learn new technologies and improve my skills.</p>
+            </div>
+        </section>
         <section>
-            <h2>My Projects</h2>
-            <p>Here are some of my amazing projects. The text and background will adapt.</p>
+            <div class="Acedemic-background">
+                <h1 style="text-align: left; font-size: 36px; font-weight: bold; color: #FFD43B;">My Acedemic Background</h1>
+                <p><span>University:</span> BRAC University</p>
+                <p><span>Department:</span> Computer Science</p>
+                <p><span>Current Semester:</span> 11</p>
+
+                <p><span>College:</span> Monipur High School and College</p>
+                <p><span>College Board:</span> Dhaka Board</p>
+                <p><span>College Passing Year:</span> 2020</p>
+
+                <p><span>School:</span> Mirpur Bangla High School</p>
+                <p><span>School Board:</span> Dhaka Board</p>
+                <p><span>School Passing Year:</span> 2018</p>
+            </div>
+            <div>
+                <h1 style="text-align: left; font-size: 36px; font-weight: bold; color: #FFD43B;">My Skills</h1>
+                <p><span>Programming Languages:</span> C, Python, JavaScript</p>
+                <p><span>Web Development:</span> HTML, CSS, JavaScript, React, MongoDB, tailwind CSS</p>
+                <p><span>Database Management:</span> MySQL, MongoDB</p>
+                <p><span>Artificial Intelligence:</span> Python (NumPy, Pandas, Scikit-learn), R (caret) </p>
+            </div>
+            <div>
+                <h1> Currently Running course details <span>Click here</span></h1>
+            </div>
+        </section>
+        <section>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <section>
+            <div style="text-align: center; font-size: 64px;">" <i>It is what it is</i> "-J.E. Lawrence</div>
         </section>
     </main>
 
@@ -37,7 +112,10 @@
             <div>
                 <p class="footer-bottomText">Copyright © 2025 - All right reserved by shafim1638@gmail.com</p>
             </div>
-            <div>
+            <div class="footer-contacts">
+                <div>
+                    <h1>My contacts: </h1>
+                </div>
                 <a href="https://www.facebook.com/mdshahriarhossain.shafim/" target="_blank" rel="noopener"><img class="facebook" src="./Icons/facebook.png" alt="facebook" ></a>
                 <a href="https://github.com/Shahriar1638" target="_blank" rel="noopener"><img class="github" src="./Icons/github.png" alt="github"></a>
             </div>
