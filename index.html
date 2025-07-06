@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/homePageStle.css">
+    <script src="https://kit.fontawesome.com/26f075e1f1.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="navbar">
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul class="navbarOptions">
-                <li class="navbarOption"><a href="#about">About Me</a></li>
-                <li class="navbarOption"><a href="#projects">Projects</a></li>
-                <li class="navbarOption"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="light-theme">
+    <header class="Navbar-container">
+        <div>
+            <h1> <span class="Navbar-text">Hello</span> Welcome to My Portfolio</h1>
+        </div>
+        <div>
+            <button id="theme-toggle" title="ThemeButton">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+        </div>
     </header>
+
     <main>
-        <section id="about">
+        <section>
             <h2>About Me</h2>
-            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+            <p>This is some content about me. It should change color with the theme.</p>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/Shahriar1638/Demo_Portfolio">Project 1</a></li>
-                <li><a href="https://github.com/Shahriar1638/Demo_Portfolio">Project 2</a></li>
-                <li><a href="https://github.com/Shahriar1638/Demo_Portfolio">Project 3</a></li>
-            </ul>
-        </section>   
+        <section>
+            <h2>My Projects</h2>
+            <p>Here are some of my amazing projects. The text and background will adapt.</p>
+        </section>
     </main>
+
     <footer>
-        
+         <div class="footer-container">
+            <div>
+                <p class="footer-bottomText">Copyright © 2025 - All right reserved by shafim1638@gmail.com</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/mdshahriarhossain.shafim/" target="_blank" rel="noopener"><img class="facebook" src="./Icons/facebook.png" alt="facebook" ></a>
+                <a href="https://github.com/Shahriar1638" target="_blank" rel="noopener"><img class="github" src="./Icons/github.png" alt="github"></a>
+            </div>
+         </div>
     </footer>
+    <script src="themeScript.js"></script>
 </body>
 </html>
