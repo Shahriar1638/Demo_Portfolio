@@ -165,27 +165,27 @@ main {
     width: 100%;
 }
 
-.skill-card, .project-card {
+.skill-card {
     background-color: var(--card-bg);
     border-radius: 8px;
     padding: 30px;
     text-align: center;
 }
-.skill-card h3, .project-card h3 {
+
+.skill-card h3 {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
     color: var(--button1-text);
-    
 }
 
-.skill-card p, .project-card p {
+.skill-card p {
     margin: 0;
     color: var(--card-color);
     line-height: 1.6;
 }
 
-.skill-card svg, .project-card svg {
+.skill-card svg {
     width: 50px;
     height: 50px;
     fill: var(--button1-text);
@@ -203,6 +203,33 @@ main {
 
 .project-card {
     text-decoration: none; 
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--button1-text);
+}
+
+.project-card p {
+    margin: 0;
+    color: var(--card-color);
+    line-height: 1.6;
+}
+
+.project-card svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--card-color);
+    margin-bottom: 20px;
 }
 /* ---------------------> Footer Styles <---------------------*/
 
