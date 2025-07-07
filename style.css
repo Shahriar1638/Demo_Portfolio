@@ -163,16 +163,15 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     width: 100%;
-    /* max-width: 1000px; */
 }
 
-.skill-card {
+.skill-card, .project-card {
     background-color: var(--card-bg);
     border-radius: 8px;
     padding: 30px;
     text-align: center;
 }
-.skill-card h3 {
+.skill-card h3, .project-card h3 {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
@@ -180,17 +179,30 @@ main {
     
 }
 
-.skill-card p {
+.skill-card p, .project-card p {
     margin: 0;
     color: var(--card-color);
     line-height: 1.6;
 }
 
-.skill-card svg {
+.skill-card svg, .project-card svg {
     width: 50px;
     height: 50px;
     fill: var(--button1-text);
     margin-bottom: 20px;
+}
+/* ---------------------> my project Styles <---------------------*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    text-decoration: none; 
 }
 /* ---------------------> Footer Styles <---------------------*/
 
