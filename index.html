@@ -90,7 +90,19 @@
                 <a href="https://github.com/Shahriar1638" target="_blank" rel="noopener"><img class="github" src="./Icons/github.png" alt="github"></a>
             </div>
          </div>
+         <div style="margin: 5px 0; font-size: 14px; color: #888; display: flex; justify-content: center; align-items: center;">
+            <p id="pageLocation"></p>
+            <p style="margin-left: 5px; margin-right: 5px;">||</p>
+            <p id="lastModified"></p>
+         </div>
     </footer>
     <script src="themeScript.js"></script>
+    <script>
+        const pageLocation = window.location.href;
+        document.getElementById('pageLocation').textContent = `Location: ${pageLocation}`;
+
+        const lastModified = document.lastModified;
+        document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+    </script>
 </body>
 </html>
